@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Async and await in JS</title>
+    </head>
+    <body>
+        <h2>Async and await in JS</h2>
+        <h3 id="result"></h3>
+        <script>
+            async function add(a,b){
+                let response = await a+b;
+                display(response);
+            }
+            function display(some){
+                document.getElementById("result").innerHTML=
+                some;
+            }
+            add(3,4);
+        </script>
+    </body>
+</html>
