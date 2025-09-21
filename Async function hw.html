@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Async function hw in JS</title>
+    </head>
+    <body>
+        <h2>Async function hw in JS</h2>
+        <p>Product of 40 and 56 is</p>
+        <p id="result"></p>
+        <script>
+            async function product(a,b){
+                let response= await a*b;
+                display(response);
+            }
+            function display(some){
+                document.getElementById("result").innerHTML=
+                some;
+            }
+            product(40,56);
+        </script>
+    </body>
+</html>
